@@ -1,0 +1,25 @@
+.card-element{
+    background-color: hsla(240, 1%, 29%, 0.493);
+    min-height: 200px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 0 20px;
+}
+
+.card-element h3{
+    font-size: 1.8rem;
+}
+
+.card-element p{
+    font-size: 1.5rem;
+    color: #adadada6;
+}
+
+
+.content-services{
+    padding-bottom: 30px;
+}

@@ -1,0 +1,175 @@
+.single__modal{
+    position: fixed;
+    background-color: #606363bb;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition:  all 500ms ease;
+}
+
+.single__modal.show{
+    visibility: visible;
+    opacity: 1;
+}
+
+.single__modal-flex{
+    background-color: #FF9A8B;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 15px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 0 12px #928e8e9c;
+}
+
+.single__iconClose{
+    position: absolute;
+    color: #c7c3c3;
+    font-size: 3.5rem;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.single__column{
+    flex: 1 1 160px;
+    /* background-color: tomato; */
+}
+
+.single__img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.single__rigth{
+    flex: 0 1 150px;
+}
+
+
+.single__category {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.single__title, .single__price {
+    font-size: 2.2rem;
+    font-weight: 300;
+}
+
+.single__description {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #f8f9fac4;
+}
+
+.single__left{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+/* ------------------------ buttons -------------------  */
+
+.single__btn-content{
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.single__amount{
+    width: 60px;
+    text-align: center;
+}
+
+.single__decrease,
+.single__increase,
+.single__amount{
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 5px 20px;
+}
+
+.single__btn-add{
+    width: 140px;
+    padding: 10px 0;
+    border: 1px solid #f8f9fa1c;
+    outline: none;
+    border-radius: 5px;
+    background-color: #343a40;
+    color: #f8f9fa;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.add{
+    gap: 20px;
+    margin-bottom: 0;
+}
+
+.go-to-cart{
+    width: 110px;
+}
+
+
+
+@media (min-width:750px){
+    .single__rigth{
+        flex: 0 1 330px;
+    }
+
+    .single__img{
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .single__modal-flex{
+        gap: 50px;
+    }
+
+    .single__left{
+        gap: 30px;
+    }
+
+    .single__category{
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    .single__title,
+    .single__price{
+        font-size: 3.6rem;
+    }
+
+    .single__description{
+        font-size: 2rem;
+        line-height: 1.6;
+    }
+
+    .single__btn-content{
+        margin: 25px 0;
+    }
+
+    .single__amount{
+        font-size: 2rem;
+    }
+}
+
+
+@media (min-width:1200px){
+    .single__column{
+        flex: 1 1 477px
+    }
+}

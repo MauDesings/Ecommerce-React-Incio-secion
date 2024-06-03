@@ -1,0 +1,110 @@
+.cart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 0 30px 0;
+}
+
+
+/* --------------------------------- IZQUIERDA ------------------------------ */
+.cart__item-content{
+    height: 82vh;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart__head,
+.cart__footer-flex{
+    /* background-color: rgb(19, 185, 94); */
+    background-color: #FF9A8B;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    
+    
+    
+
+    padding: 20px 15px;
+    box-shadow: 0 0 12px #00000026;
+}
+
+.cart__head h3{
+    font-size: 1.8rem;
+}
+
+.cart__body{
+    height: 100%;
+    padding: 0 8px;
+    overflow-y: scroll;
+    /* background-color: #49494b7e; */
+    background-color: #1a19199a;
+}
+
+.cart__footer-flex{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 0 0 8px 8px;
+}
+
+.cart_btn-back,
+.cart__btn-clear,
+.cart__btn-checkout{
+    font-size: 1.6rem;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 140px;
+    background-color: #343a40;
+    color: #fff;
+}
+
+/* ---------------------------------- DERECHA ----------------------------------  */
+.cart__sumary-content{
+    background-color: #FF9A8B;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    
+
+    width: 100%;
+    max-width: 350px;
+    height: 230px;
+    border-radius: 0 0 8px 8px;
+}
+
+.cart__sumary-content h3{
+    font-size: 2.3rem;
+    padding: 18px;
+    text-align: center;
+}
+
+.cart__sumary-info{
+    border-top: 1px solid #646060;
+    display: grid;
+    place-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    font-size: 1.8rem;
+}
+
+.cart__btn-checkout{
+    width: 180px;
+}
+
+.cart__empty-content{
+    width: 100%;
+}
+.cart__empty-message{
+    font-size: 2.6rem;
+    text-align: center;
+}
+
+
+@media (min-width: 750px){
+    .cart{
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 30px;
+    }
+}

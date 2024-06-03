@@ -1,0 +1,155 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.pinimg.com/564x/17/a4/e7/17a4e7946d6fe0e7c37733ff12f775a7.jpg",
+      "title": "Zapatillas Deportivas",
+      "price": 19.99,
+      "description":"Zapatillas deportivas informales de malla para mujer, planos ligeros y suaves, calzado transpirable de talla grande, color rosa.",
+      "category": "Mujeres",
+      "itHasDues": true,
+      "isAnOffer": false
+    },
+    {
+      "id": 2,
+      "image": "https://i.pinimg.com/564x/33/10/72/331072fdffe811044ef60f13eeac9900.jpg",
+      "title": "Zapatillas Deportivas",
+      "category": "Hombres",
+      "price": 29.99,
+      "description": "Zapatillas deportivas de lujo para hombre. Respirable, Aumento de la altura, Absorbe el sudor,light, Resistente, Antiolores.",
+      "itHasDues": false,
+      "isAnOffer": true
+    },
+    {
+      "id": 3,
+      "image": "https://i.pinimg.com/564x/c0/44/bd/c044bdbe56446f805c9710fd173002fd.jpg",
+      "title": "Zapatillas Deportivas",
+      "price": 39.99,
+      "description":"Super deportivas y moldeable, Respirable,Aumento de la altura.",
+      "category": "Mujeres",
+      "itHasDues": true,
+      "isAnOffer": true
+    },
+    {
+      "id": 4,
+      "image": "https://i.pinimg.com/564x/ec/42/05/ec4205435659c054e59357488df87732.jpg",
+      "title": "Zapatillas De Patín",
+      "description":"Zapatos de patín de ruedas para niños y niñas, de 2 ruedas zapatillas.",
+      "price": 49.99,
+      "category": "Niños",
+      "itHasDues": false,
+      "isAnOffer": false
+    },
+    {
+      "id": 5,
+      "image": "https://i.pinimg.com/564x/8d/05/7f/8d057f1bc72bb058aebfdce05a62ef3f.jpg",
+      "title": "Zapatillas Deportivas",
+      "price": 59.99,
+      "description": "Zapatillas deportivas de malla para Mujer, zapatos informales con plataforma y cuña, de talla grande, 2022.",
+      "category": "Mujeres",
+      "itHasDues": true,
+      "isAnOffer": true
+    },
+    {
+      "id": 6,
+      "image": "https://img.ltwebstatic.com/images3_pi/2023/11/06/a4/1699247242fa38ade67fe32b9b2ccdf56b192eda4b_thumbnail_720x.webp",
+      "title": "Zapatillas de Skate",
+      "price": 69.99,
+      "description":"Zpatillas Skate Multicolor de estampao combinado para niñas.",
+      "category": "Niños",
+      "itHasDues": false,
+      "isAnOffer": false
+    },
+    {
+      "id": 7,
+      "image": "https://i.pinimg.com/564x/1b/8e/25/1b8e2574e4b7f64cf52b41f88abd3183.jpg",
+      "title": "Zapatillas deportivas",
+      "description": "Zapatillas deportivas de malla transpirable para mujer, amortiguación de aire, a la moda, para primavera y otoño 2023.",
+      "price": 79.99,
+      "category": "Mujeres",
+      "itHasDues": true,
+      "isAnOffer": true
+    },
+    {
+      "id": 8,
+      "image": "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/dad3327845e6e78015bc9e7bcbb746ff.jpg?imageView2/2/w/500/q/60/format/webp",
+      "title": "Zapatillas Deportivas",
+      "price": 89.99,
+      "description":"Zapatillas Para Correr Para Hombres, Absorción De Impactos, Transpirables, Livianos, Antideslizantes.",
+      "category": "Hombres",
+      "itHasDues": false,
+      "isAnOffer": false
+    },
+    {
+      "id": 9,
+      "image": "https://http2.mlstatic.com/D_NQ_NP_622787-CBT47418792090_092021-O.webp",
+      "title": "Zapatillas Deportivas",
+      "description":"Zapatillas deportivas informales de malla para mujer, planos ligeros y suaves, calzado transpirable.",
+      "price": 99.99,
+      "category": "Mujeres",
+      "itHasDues": true,
+      "isAnOffer": true
+    },
+    {
+      "id": 10,
+      "image": "https://i.pinimg.com/564x/1b/2f/05/1b2f05e1cf862c1808cf118d2c491681.jpg",
+      "title": "Zapatillas De Deporte",
+      "price": 109.99,
+      "description":"Zapatillas de deporte de plataforma para mujer con cojín de aire de malla transpirable, cómodos, calcetín, talla grande.",
+      "category": "Mujeres",
+      "featured": true,
+      "itHasDues": false,
+      "isAnOffer": false
+    },
+    {
+      "id": 11,
+      "image": "https://i.pinimg.com/564x/b8/93/28/b8932888e18698cf67c7e44fb3522412.jpg",
+      "title": "Zapatillas Casuales",
+      "price": 119.99,
+      "description":"zapatillas para niños no-deslizamiento, modelos de 10 a 14 años, super casuales de moda primavera.",
+      "category": "Niños",
+      "itHasDues": true,
+      "isAnOffer": true
+    },
+    {
+      "id": 12,
+      "image": "https://i.pinimg.com/564x/30/2b/f4/302bf40352bea519a152dbdd4796d61b.jpg",
+      "title": "Zapatillas De Running",
+      "price": 129.99,
+      "description":"Zapatos De Running Ligeros Y Transpirables Para Hombre.",
+      "category": "Hombres",
+      "itHasDues": false,
+      "isAnOffer": false
+    },
+    {
+      "id": 13,
+      "image": "https://i.pinimg.com/564x/f3/49/68/f349683d562ea21b82d66d883cbc8383.jpg",
+      "title": "Zapatillas De Deporte",
+      "price": 139.99,
+      "description":"Zapatillas de deporte de plataforma de punto de cristal para Mujer, zapatos deportivos informales Otoño, 2023",
+      "category": "Mujeres",
+      "itHasDues": true,
+      "isAnOffer": true
+    },
+    {
+      "id": 14,
+      "image": "https://m.media-amazon.com/images/I/51ynEE-czMS._AC_UF1000,1000_QL80_.jpg",
+      "title": "Zapatillas Casuales",
+      "price": 149.99,
+      "description":" zapatillas casuales para niños hechos de malla y goma transpirable moda tenis infanti.",
+      "category": "Niños",
+      "featured": true,
+      "itHasDues": false,
+      "isAnOffer": false
+    },
+    {
+      "id": 15,
+      "image": "https://i.ebayimg.com/images/g/l8sAAOSwRkhiNuJu/s-l500.jpg",
+      "title": "Zapatillas Deportivas",
+      "price": 159.99,
+      "description":"Zapatillas Deportivas de hombre transpirables, ideal Para Correr y trotar de tipo atlético",
+      "category": "Hombres",
+      "featured": true,
+      "itHasDues": true,
+      "isAnOffer": true
+    }
+  ]

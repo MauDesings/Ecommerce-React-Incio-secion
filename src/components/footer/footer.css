@@ -1,0 +1,24 @@
+.footer{
+    background-color: #1a19199a;
+    padding: 20px 0;
+}
+
+.footer__content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__logo{
+    font-size: 3rem;
+}
+.footer__icon{
+    color:rgba(255, 255, 255, 0.87);
+    font-size: 2rem;
+}
+
+.footer__social{
+    /* background-color: aquamarine; */
+    display: flex;
+    gap: 15px;
+}
