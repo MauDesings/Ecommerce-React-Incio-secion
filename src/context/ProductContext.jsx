@@ -14,6 +14,7 @@ const ProductProvider = ({children}) => {
                 const querySnapShop = await getDocs(collection(db,'products'));
                 const newData = querySnapShop.docs.map((doc) => ({id: doc.id, ...doc.data()}));
                 const featureData = newData.filter(item => item.featured === true);
+                console.log(featureData)
 
                 setData(prev => ({
                     ...prev,
