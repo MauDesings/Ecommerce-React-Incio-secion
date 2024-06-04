@@ -33,16 +33,19 @@
 
 .single__iconClose{
     position: absolute;
-    color: #c7c3c3;
     font-size: 3.5rem;
     right: 20px;
     top: 20px;
     cursor: pointer;
 }
 
+.single__iconClose:hover{
+    color: #c7c3c3;
+    transition: .3s ease;
+}
+
 .single__column{
     flex: 1 1 160px;
-    /* background-color: tomato; */
 }
 
 .single__img{
@@ -100,6 +103,11 @@
     font-size: 1.5rem;
     font-weight: 300;
     padding: 5px 20px;
+}
+
+.single__decrease,
+.single__increase{
+    cursor: pointer;
 }
 
 .single__btn-add{
