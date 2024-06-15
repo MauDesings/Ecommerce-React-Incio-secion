@@ -28,4 +28,4 @@ dist-ssr
 
 # Firebase credentials
 src/credentials/credentials.json
-src/credentials/credentials.json
+
