@@ -18,7 +18,7 @@ const updatedImages = [
   { id:'yGxxhjT2TSAZEJwtuKAy', image:'https://firebasestorage.googleapis.com/v0/b/nei-ecommerce.appspot.com/o/products%2F8-z.webp?alt=media&token=640a18c9-d9f0-4108-87f8-875ad96f9238'},
 ];
 
-// Actualizar imagenes
+
 export async function updateImages() {
   const updatePromises = updatedImages.map(async (item) => {
     const docRef = collectionRef.doc(item.id);
