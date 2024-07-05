@@ -3,11 +3,10 @@ import './appCheckout.css'
 
 const AppCheckout = () => {
      const {state,handleInputChange,sendForm,errors} = useCartContext();
-    
 
   return (
     <div className='column-form'>
-        <h2 className='sub-title'>Completa el formulario</h2>
+        <h2 className='sub-title'>Completa el formulario de compra</h2>
         <form className='form' onSubmit={sendForm}>
            <div className='form__group'>
                 <label htmlFor="name">Nombre</label>

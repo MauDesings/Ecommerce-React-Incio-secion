@@ -3,10 +3,13 @@ import NavLinks from './NavLinks'
 import {RiMenuFill,RiCloseFill} from 'react-icons/ri'
 import './navBar.css'
 import CartWidget from '../cartWidget/CartWidget'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
+import { useAuthContext } from '../../context/AuthContext'
 
 const NavBar = () => {
     const [openMenu, setOpenMenu] = useState(false);
+    const {user,handleSignOut} = useAuthContext();
+    const navigate = useNavigate();
 
     return (
         <nav className='nav container'>
@@ -20,9 +23,22 @@ const NavBar = () => {
                 </ul>
             </div>
 
-            <NavLink to='/Cart' className='link'>
-                <CartWidget />
-            </NavLink>
+            <div className='content-login-cart'>
+                {
+                    user ? (
+                        <>
+                            <button className='sign-out' onClick={() => handleSignOut(navigate)}>Cerrar sesión</button>
+                        </>
+                    ) : (
+                        <NavLink to="/login" className='link'>Iniciar sesión</NavLink>
+                    )
+                }
+
+                <NavLink to='/Cart' className='link'>
+                    <CartWidget />
+                </NavLink>
+            </div>
+           
         </nav>
     )
 }
