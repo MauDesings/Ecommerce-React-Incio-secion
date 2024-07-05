@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom'
+import { Navigate, Route, Routes } from 'react-router-dom'
 import './App.css'
 import NavBar from './components/navBar/NavBar'
 import AppHome from './pages/home/AppHome';
@@ -8,8 +8,11 @@ import AppCategorie from './pages/categorie/AppCategorie';
 import CategoryProductList from './pages/categoryProductList/CategoryProductList';
 import AppCart from './pages/cart/AppCart';
 import AppCheckout from './pages/checkout/AppCheckout';
+import Login from './pages/login/Login';
+import { useAuthContext } from './context/AuthContext';
 
 function App() {
+    const { user } = useAuthContext();
     const greeting = 'Te Damos La Bienvenida a';
 
   return (
@@ -27,7 +30,12 @@ function App() {
                         <Route exact path='/categories' element={<AppCategorie />}/>
                         <Route exact path='/category/:categoryId' element={<CategoryProductList />}/>
                         <Route exact path='/Cart' element={<AppCart />}/>
-                        <Route exact path='/checkout' element={<AppCheckout />}/>
+                        <Route 
+                            exact 
+                            path='/checkout' 
+                            element={user ? <AppCheckout /> : <Navigate to='/login' />} 
+                            />
+                            <Route exact path='/login' element={<Login />} />
                     </Routes>
                 </div>
             </section>

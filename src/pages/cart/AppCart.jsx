@@ -2,11 +2,24 @@ import React from 'react'
 import './appCart.css'
 import { useCartContext } from '../../context/CartContext'
 import ItemCart from '../../components/itemCart/ItemCart';
-import { NavLink } from 'react-router-dom';
+import {AiOutlineRollback } from 'react-icons/ai'
+import { NavLink, useNavigate } from 'react-router-dom';
+import { useAuthContext } from '../../context/AuthContext';
 
 const AppCart = () => {
   const {state,handleClearCart} = useCartContext();
   const totalItemsCart = state.totalItems > 1 ? `${state.totalItems} items` : `${state.totalItems} item`
+  const navigate = useNavigate();
+  const { user } = useAuthContext();
+
+  const handleCheckout = () => {
+    if (user) {
+      navigate('/checkout');
+    } else {
+      navigate('/login');
+    }
+  };
+
   return (
     <div className='cart'>
         {
@@ -27,7 +40,7 @@ const AppCart = () => {
 
                         <li className='cart__footer-flex'>
                             <NavLink to='/product'>
-                                <button className='cart_btn-back'>Atráz</button>
+                                <button className='cart_btn-back'>Atrás</button>
                             </NavLink>
                             
                             <button className='cart__btn-clear' onClick={handleClearCart}>Vaciar carrito</button>
@@ -39,15 +52,17 @@ const AppCart = () => {
                         <div className='cart__sumary-info'>
                             <p>Productos <span>( {state.totalItems} )</span></p>
                             <h4>TOTAL : <span>$ {state.totalPrice}</span></h4>
-                            <NavLink to='/checkout'>
-                                <button className='cart__btn-checkout'>Go to Checkout</button>
-                            </NavLink>
+                            <button className='cart__btn-checkout' onClick={handleCheckout}>Go to Checkout</button>
+                            
                         </div>
                     </div>
                 </>
             ) : (
                     <div className='cart__empty-content'>
                         <h3 className='cart__empty-message'>Tu carrito esta vacío</h3>
+                        <NavLink to='/product' className='back-link'>
+                            <button className='cart__nav-btn-back'> <AiOutlineRollback /> Ir a productos </button>
+                        </NavLink> 
                     </div>
             )
         }

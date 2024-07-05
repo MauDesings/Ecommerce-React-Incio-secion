@@ -1,4 +1,4 @@
-.column-form{
+.logueo{
     background-color: rgba(58, 57, 57, 0.397);
     width: 100%;
     max-width: 550px;
@@ -7,13 +7,15 @@
     border-radius: 10px;
 }
 
-.sub-title{
-    font-size: 2rem;
+.logueo__subtitle{
+    font-size: 2.8rem;
     text-align: center;
+    margin: 10px 0;
 }
 
 .form{
     display: grid;
+    gap: 20px;
 }
 
 .form__group{
@@ -27,38 +29,38 @@
     font-weight: 500;
 }
 
-.form__group input,
-.form button{
+.logue .form__group input,
+.logueo .form button,
+.logueo__btn{
     padding: 13px;
     outline: none;
     border: none;
     border-radius: 5px;
-}
-
-.confir{
-    background-color: #FF9A8B;
-    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 50%, #FF99AC 100%);
-    margin-top: 8px;
+    background-color: #343a40;
     color: #fff;
+    margin:10px 0;
     cursor: pointer;
+    font-size: 1.5rem;
 }
 
-.error{
+.logueo .form__group input{
+    margin: 0;
+}
+
+.logueo__btn{
+    width: 100%;
+    margin-top: 10px;
+    background-color: #FF6A88;
+}
+
+.logueo__error{
     font-size: 1.4rem;
-    margin-top: 3px;
     opacity: 0;
     overflow: hidden;
 }
 
-.errorActive{
+.activeError{
     color: #f83b3b;
-    font-size: 1.4rem;
-    margin-top: 3px;
     opacity: 1;
     overflow: visible;
-}
-
-.disab{
-    cursor: not-allowed;
-    opacity:0.5;
 }

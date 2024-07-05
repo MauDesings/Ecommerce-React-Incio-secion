@@ -61,6 +61,17 @@
     color: #fff;
 }
 
+
+.cart__nav-btn-back{
+    margin-bottom: 3px;
+    border: 1px solid #67696b3b;
+    background-color: transparent;
+    padding: 8px 20px;
+    cursor: pointer;
+    color: #fff;
+}
+
+
 /* ---------------------------------- DERECHA ----------------------------------  */
 .cart__sumary-content{
     background-color: #FF9A8B;
@@ -94,7 +105,11 @@
 
 .cart__empty-content{
     width: 100%;
+    display: grid;
+    place-items: center;
+    gap: 20px;
 }
+
 .cart__empty-message{
     font-size: 2.6rem;
     text-align: center;

@@ -1,6 +1,7 @@
 .cartWidget{
     position: relative;
     padding: 0 5px;
+    height: 30px;
 }
 
 .cartWidget__number{
