@@ -27,7 +27,7 @@ function App() {
             <main>
                 <section className="section">
                     <div className="container">
-                        <Suspense fallback={<div>Loading...</div>}>
+                        <Suspense fallback={<h2 className='loading'>Loading...</h2>}>
                             <Routes>
                                 <Route exact path='/' element={<AppHome greeting={greeting} />} />
                                 <Route exact path='/product' element={<AppProduct />} />
