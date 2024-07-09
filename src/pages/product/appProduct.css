@@ -1,0 +1,13 @@
+.content-items-grid-product{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    gap: 20px;
+}
+
+.subtitle-product {
+    font-size: 4.3em;
+    line-height: 1.1; 
+    text-align: center;
+    margin: 50px 0 30px;
+  }
