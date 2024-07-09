@@ -29,28 +29,33 @@
     font-weight: 500;
 }
 
-.logue .form__group input,
+.logueo .form__group .input,
 .logueo .form button,
 .logueo__btn{
     padding: 13px;
     outline: none;
     border: none;
     border-radius: 5px;
-    background-color: #343a40;
-    color: #fff;
     margin:10px 0;
-    cursor: pointer;
     font-size: 1.5rem;
 }
 
-.logueo .form__group input{
+.logueo .form__group .input{
     margin: 0;
+}
+
+.form button{
+    background-color: #343a40;
+    cursor: pointer;
+    color: #fff;
 }
 
 .logueo__btn{
     width: 100%;
     margin-top: 10px;
     background-color: #FF6A88;
+    cursor: pointer;
+    color: #fff;
 }
 
 .logueo__error{

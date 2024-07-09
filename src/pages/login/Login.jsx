@@ -15,12 +15,12 @@ const Login = () => {
         <form className='form' onSubmit={(e)=>handleSubmit(e, isRegistrando, navigate)}>
             <div className="form__group">
                 <label htmlFor="email">Email</label>
-                <input type="text" id='email' name='email' value={values.email} onChange={handleInputChange} required />
+                <input className='input' type="text" id='email' name='email' value={values.email} onChange={handleInputChange} required />
             </div>
 
             <div className="form__group">
                 <label htmlFor="password">Contraseña</label>
-                <input type="password" id='password' name='password' value={values.password} onChange={handleInputChange} required />
+                <input className='input' type="password" id='password' name='password' value={values.password} onChange={handleInputChange} required />
             </div>
 
             <button type='submit'>
