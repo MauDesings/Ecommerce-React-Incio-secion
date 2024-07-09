@@ -20,7 +20,7 @@ const AppCategorie = () => {
         }
       </div>
 
-      <div className='content-items-grid'>
+      <div className='content-items-grid-category'>
         {
           data.featureProducts.map(item => (
             <ItemList key={item.id} {...item} />
