@@ -4,8 +4,14 @@ import { createContext, useContext, useEffect, useState } from "react";
 const ProductContext = createContext();
 
 const ProductProvider = ({children}) => {
+     const [openMenu, setOpenMenu] = useState(false);
     const [data, setData] = useState({productData:[], featureProducts:[]});
     const [isLoading, setIsLoading] = useState(true);
+
+    
+    function handleOpen() {
+        setOpenMenu(!openMenu);
+    }
 
     useEffect(()=>{
         async function getProducts() {
@@ -14,7 +20,6 @@ const ProductProvider = ({children}) => {
                 const querySnapShop = await getDocs(collection(db,'products'));
                 const newData = querySnapShop.docs.map((doc) => ({id: doc.id, ...doc.data()}));
                 const featureData = newData.filter(item => item.featured === true);
-                console.log(featureData)
 
                 setData(prev => ({
                     ...prev,
@@ -35,11 +40,10 @@ const ProductProvider = ({children}) => {
         let newValue = products.productData.map(item => item[property])
         return newValue = [...new Set(newValue)];
     }
-
     const categoryOnlyData = getUniqueData(data, 'category');
 
     return (
-        <ProductContext.Provider value={{data, isLoading, categoryOnlyData}}>
+        <ProductContext.Provider value={{openMenu, handleOpen,data, isLoading, categoryOnlyData}}>
             {children}
         </ProductContext.Provider>
     )
